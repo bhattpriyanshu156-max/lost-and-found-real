@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add item | Graphic Era Lost &amp; Found</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand">
+            <h2>Graphic Era</h2>
+            <span>Lost &amp; Found Portal</span>
+        </div>
+        <nav class="nav-links" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Register</a>
+            <a href="add_item.html" aria-current="page">Add Item</a>
+            <a href="profile.html">My Profile</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Report an item</h1>
+        <p class="note" id="loginNote" hidden>You need to <a href="login.html">log in</a> to report an item.</p>
+        <form class="panel" id="addItemForm">
+            <label for="type">This item was</label>
+            <select id="type" name="type" required>
+                <option value="lost">Lost</option>
+                <option value="found">Found</option>
+            </select>
+            <label for="name">Item name</label>
+            <input id="name" name="name" maxlength="100" required>
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="3" maxlength="1000" required></textarea>
+            <label for="location">Where on campus</label>
+            <input id="location" name="location" maxlength="150" placeholder="e.g. Library, Block A canteen" required>
+            <label for="date">Date</label>
+            <input id="date" name="date" type="date" required>
+            <button type="submit">Save item</button>
+            <p class="msg" id="msg" role="status"></p>
+        </form>
+    </main>
+    <footer>Graphic Era (Deemed to be University), Dehradun &middot; Campus Lost &amp; Found</footer>
+    <script src="script.js"></script>
+</body>
+</html>

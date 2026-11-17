@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Graphic Era Lost &amp; Found</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand">
+            <h2>Graphic Era</h2>
+            <span>Lost &amp; Found Portal</span>
+        </div>
+        <nav class="nav-links" aria-label="Main">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Register</a>
+            <a href="add_item.html">Add Item</a>
+            <a href="profile.html">My Profile</a>
+        </nav>
+    </header>
+    <main class="home">
+        <section class="hero">
+            <h1>Lost something on campus? Find it here.</h1>
+            <p>The Graphic Era student portal to report lost items and find things that have been recovered around the campus.</p>
+            <div class="hero-buttons">
+                <a href="lost_item.html">View lost items</a>
+                <a href="found_item.html">View found items</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Report a lost item</h3>
+                <p>Tell other students about something you have lost.</p>
+                <a href="add_item.html">Report lost item</a>
+            </div>
+            <div class="feature-card">
+                <h3>Report a found item</h3>
+                <p>Help a fellow student get their belongings back.</p>
+                <a href="add_item.html">Report found item</a>
+            </div>
+            <div class="feature-card">
+                <h3>Browse items</h3>
+                <p>Search what other students have reported.</p>
+                <a href="lost_item.html">Browse items</a>
+            </div>
+        </section>
+
+        <section class="stats" id="stats" aria-label="Portal statistics"></section>
+    </main>
+    <footer>Graphic Era (Deemed to be University), Dehradun &middot; Campus Lost &amp; Found</footer>
+    <script src="script.js"></script>
+    <script>loadStats();</script>
+</body>
+</html>

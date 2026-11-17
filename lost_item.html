@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lost items | Graphic Era Lost &amp; Found</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand">
+            <h2>Graphic Era</h2>
+            <span>Lost &amp; Found Portal</span>
+        </div>
+        <nav class="nav-links" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Register</a>
+            <a href="add_item.html">Add Item</a>
+            <a href="profile.html">My Profile</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Lost items</h1>
+        <input class="search" id="search" type="search" placeholder="Search by name, description or place" aria-label="Search items">
+        <div class="item-list" id="list"></div>
+    </main>
+    <footer>Graphic Era (Deemed to be University), Dehradun &middot; Campus Lost &amp; Found</footer>
+    <script src="script.js"></script>
+    <script>initList("lost");</script>
+</body>
+</html>

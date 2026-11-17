@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login | Graphic Era Lost &amp; Found</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand">
+            <h2>Graphic Era</h2>
+            <span>Lost &amp; Found Portal</span>
+        </div>
+        <nav class="nav-links" aria-label="Main">
+            <a href="index.html">Home</a>
+            <a href="login.html" aria-current="page">Login</a>
+            <a href="registration.html">Register</a>
+            <a href="add_item.html">Add Item</a>
+            <a href="profile.html">My Profile</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Student login</h1>
+        <form class="panel" id="loginForm">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required>
+            <button type="submit">Log in</button>
+            <p class="msg" id="msg" role="status"></p>
+            <p>No account? <a href="registration.html">Register</a></p>
+        </form>
+    </main>
+    <footer>Graphic Era (Deemed to be University), Dehradun &middot; Campus Lost &amp; Found</footer>
+    <script src="script.js"></script>
+</body>
+</html>
